@@ -54,6 +54,12 @@ yarn add jest -D @types/jest -D eslint-plugin-jest
 yarn add -D @testing-library/jest-dom @testing-library/react @testing-library/react-hooks jest-canvas-mock jest-styled-components
 ```
 
+- jest sonarqube reporter: it converts the jest output into a format readable by Sonarqube.
+
+```bash
+yarn add -D jest-sonar-reporter
+```
+
 ---
 
 This example features how you use a different styling solution than [styled-jsx](https://github.com/zeit/styled-jsx) that also supports universal styles. That means we can serve the required styles for the first render within the HTML and then load the rest in the client. In this case we are using [styled-components](https://github.com/styled-components/styled-components).
