@@ -9,8 +9,8 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  sonarcloud:
-    name: Sonar Cloud
+  check:
+    name: Static Check
     runs-on: ubuntu-latest
     
     steps:
@@ -34,7 +34,7 @@ jobs:
         run: yarn test:coverage
 
       # Run SonarCloud scan for static code check
-      - name: Scan
+      - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@v1.5
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
