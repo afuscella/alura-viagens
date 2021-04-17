@@ -5,6 +5,9 @@ module.exports = {
     'node_modules',
   ],
   collectCoverage: true,
+  moduleNameMapper: {
+    '@/theme/(.*)': '<rootDir>/src/theme/$1',
+  },
   coveragePathIgnorePatterns: [
     '<rootDir>/node_modules',
     '/node_modules/',
