@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 import PropTypes from 'prop-types';
-import { Title } from '@/components/commons/Title';
 import { SEO } from '@/components/commons/SEO';
+import { Text } from '@/components/foundation/Text';
 
 interface ISEOProps {
   seoProps?: {
@@ -21,9 +21,20 @@ export default function WebsitePageWrapper({ seoProps, children }: IWebsitePageW
         // eslint-disable-next-line react/jsx-props-no-spreading
         {...seoProps}
       />
-      <Title>
+      <Text
+        variant="title"
+        tag="h1"
+        color="primary.main"
+      >
         Alura Viagens
-      </Title>
+      </Text>
+      <Text
+        variant="subTitle"
+        tag="span"
+        color="secondary.main"
+      >
+        Quando será a viagem?
+      </Text>
       {children}
     </>
   );
