@@ -9,6 +9,5 @@ declare module 'styled-components' {
     typographyVariants: TypographyVariantsType,
     breakpoints: BreakpointsType,
     transition: string;
-    fontFamily: string;
   }
 }
