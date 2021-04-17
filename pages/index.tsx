@@ -1,10 +1,10 @@
-// eslint-disable-next-line import/no-unresolved
-import { Title } from '../src/components/commons/Title';
+import { websitePageHOC } from '@/components/wrappers/WebsitePage/hoc';
+import { HomeScreen } from '@/components/screen/HomeScreen';
 
-export default function Home() {
-  return (
-    <Title>
-      My page
-    </Title>
-  );
-}
+export default websitePageHOC(HomeScreen, {
+  pageWrapperProps: {
+    seoProps: {
+      headTitle: 'Home',
+    },
+  },
+});

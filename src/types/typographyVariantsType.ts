@@ -1,22 +1,13 @@
+type FontStyleType = {
+  fontFamily: string;
+  fontSize: string;
+  fontWeight: string;
+  lineHeight: number;
+}
+
 export type TypographyVariantsType = {
-  title: {
-    fontSize: string;
-    fontWeight: string;
-    lineHeight: number;
-  };
-  titleXS: {
-    fontSize: string;
-    fontWeight: string;
-    lineHeight: number;
-  };
-  subTitle: {
-    fontSize: string;
-    fontWeight: string;
-    lineHeight: number;
-  };
-  paragraph: {
-    fontSize: string;
-    fontWeight: string;
-    lineHeight: number;
-  };
+  title: FontStyleType;
+  titleXS: FontStyleType;
+  subTitle: FontStyleType;
+  paragraph: FontStyleType;
 };
