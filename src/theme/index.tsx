@@ -20,12 +20,12 @@ const colors: ColorsType = {
   },
   primary: {
     main: {
-      color: '#000000',
+      color: '#35B6FF',
     },
   },
   secondary: {
     main: {
-      color: '#35B6FF',
+      color: '#000000',
     },
   },
 };
@@ -43,5 +43,4 @@ export const theme: DefaultTheme = {
   typographyVariants,
   breakpoints,
   transition: '200ms ease-in-out',
-  fontFamily: 'Arial,Helvetica,sans-serif',
 };
