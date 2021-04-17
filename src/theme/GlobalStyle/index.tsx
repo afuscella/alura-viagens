@@ -10,12 +10,11 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    font-family: ${({ theme }) => theme.fontFamily};
   }
   /* full height layout */
   html,
   body {
-    background: ${({ theme }) => theme.colors.background.light.color};
+    background: ${({ theme }) => theme.colors.background.main.color};
     display: flex;
     min-height: 100vh;
     width: 100%;
