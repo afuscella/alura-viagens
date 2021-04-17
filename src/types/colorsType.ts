@@ -7,4 +7,19 @@ export type ColorsType = {
       color: string;
     };
   };
+  borders: {
+    main: {
+      color: string;
+    };
+  };
+  primary: {
+    main: {
+      color: string;
+    };
+  };
+  secondary: {
+    main: {
+      color: string;
+    };
+  };
 }
