@@ -15,9 +15,15 @@ export type ColorsType = {
   primary: {
     main: {
       color: string;
+      contrastText: string;
     };
   };
   secondary: {
+    main: {
+      color: string;
+    };
+  };
+  tertiary: {
     main: {
       color: string;
     };
