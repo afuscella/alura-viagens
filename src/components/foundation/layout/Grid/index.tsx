@@ -39,6 +39,9 @@ export const Grid = {
     margin-left: auto;
     margin-right: auto;
 
+    ${propToStyle('marginLeft')};
+    ${propToStyle('marginRight')};
+
     ${propToStyle('flex')}
     ${propToStyle('display')}
     ${propToStyle('alignItems')}

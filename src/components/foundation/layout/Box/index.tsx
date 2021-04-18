@@ -9,8 +9,8 @@ interface IBox {
   flexDirection?: string;
   alignItems: string;
   justifyContent?: string;
-  marginLeft: BreakpointsTypes;
-  marginRight: BreakpointsTypes;
+  marginLeft?: BreakpointsTypes;
+  marginRight?: BreakpointsTypes;
   backgroundColor?: string;
 
   boxShadow?: string;
@@ -31,4 +31,8 @@ export const Box = styled.div<IBox>`
 
   ${propToStyle('boxShadow')};
   ${propToStyle('padding')};
+
+  ${propToStyle('backgroundRepeat')};
+  ${propToStyle('backgroundPosition')};
+
 `;

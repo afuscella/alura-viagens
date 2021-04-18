@@ -22,9 +22,6 @@ export default function WebsitePageWrapper({ seoProps, children }: IWebsitePageW
     <Box
       flex={1}
       display="flex"
-      flexDirection="column"
-      alignItems="center"
-      justifyContent="center"
       marginLeft={{ xs: '10px', md: 0 }}
       marginRight={{ xs: '10px', md: 0 }}
       backgroundColor="background.main"
@@ -35,6 +32,8 @@ export default function WebsitePageWrapper({ seoProps, children }: IWebsitePageW
       />
       <Grid.Container
         flex={1}
+        marginLeft={{ xs: '10px', md: 0 }}
+        marginRight={{ xs: '10px', md: 0 }}
         boxShadow="0 0 24px rgb(0 0 0 / 15%)"
         backgroundColor="background.light"
       >
