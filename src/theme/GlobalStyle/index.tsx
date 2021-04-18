@@ -18,7 +18,6 @@ const GlobalStyle = createGlobalStyle`
     display: flex;
     min-height: 100vh;
     width: 100%;
-    transition: all 400ms ease-in-out;
   }
   #__next {
     flex: 1;
