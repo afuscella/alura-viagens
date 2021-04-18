@@ -23,8 +23,6 @@ export default function WebsitePageWrapper({ seoProps, children }: IWebsitePageW
       flex={1}
       display="flex"
       flexDirection="column"
-      alignItems="center"
-      justifyContent="center"
       marginLeft={{ xs: '10px', md: 0 }}
       marginRight={{ xs: '10px', md: 0 }}
       backgroundColor="background.main"
@@ -35,18 +33,18 @@ export default function WebsitePageWrapper({ seoProps, children }: IWebsitePageW
       />
       <Grid.Container
         flex={1}
-        boxShadow="0 0 24px rgb(0 0 0 / 15%)"
+        boxShadow="0 0 20px 5px rgb(0 0 0 / 30%)"
         backgroundColor="background.light"
       >
         <Grid.Row
           flex={1}
-          marginTop={{ xs: '18px', md: 0 }}
+          paddingTop={{ xs: '18px', md: 0 }}
         >
           <Grid.Column
             flex={1}
             display="flex"
-            offset={{ lg: 2 }}
-            value={{ xs: 12, md: 6, lg: 10 }}
+            offset={{ xs: 0, md: 1 }}
+            value={{ xs: 12, md: 11 }}
           >
             <Text
               variant="title"
@@ -60,13 +58,13 @@ export default function WebsitePageWrapper({ seoProps, children }: IWebsitePageW
 
         <Grid.Row
           flex={1}
-          marginTop={{ xs: '10px', md: 0 }}
+          paddingTop={{ xs: '10px', md: 0 }}
         >
           <Grid.Column
             flex={1}
             display="flex"
-            offset={{ lg: 2 }}
-            value={{ xs: 12, md: 6, lg: 10 }}
+            offset={{ xs: 0, md: 1 }}
+            value={{ xs: 12, md: 11 }}
           >
             <Text
               variant="subTitle"
