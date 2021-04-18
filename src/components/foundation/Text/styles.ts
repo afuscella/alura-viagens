@@ -41,15 +41,30 @@ const paragraph = css`
   `}
 `;
 
+const smallestException = css`
+  ${({ theme }) => css`
+    font-family: ${theme.typographyVariants.smallestException.fontFamily};
+    font-size: ${theme.typographyVariants.smallestException.fontSize};
+    font-weight: ${theme.typographyVariants.smallestException.fontWeight};
+    line-height: ${theme.typographyVariants.smallestException.lineHeight};
+  `}
+`;
+
 export const TextStyleVariantMap = {
   title,
   subTitle,
   paragraph,
+  smallestException,
 };
 
 export const TextBase = styled.span`
-  ${propToStyle('textAlign')};
+  ${propToStyle('textAlign')}
 
   color: ${({ theme, color }) => get(theme, `colors.${color}.color`)};
+
+  &::placeholder {
+    opacity: 0.5;
+  }
+
   ${({ variant }) => TextStyleVariantMap[variant]};
 `;
