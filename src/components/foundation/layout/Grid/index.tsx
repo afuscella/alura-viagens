@@ -60,10 +60,10 @@ export const Grid = {
       padding-right: 16px;
     `,
     lg: css`
-      max-width: 1160px;
+      max-width: 1000px;
     `,
     xl: css`
-      max-width: 1222px;
+      max-width: 1000px;
     `,
   })}
   `,
@@ -82,7 +82,7 @@ export const Grid = {
     flex-basis: 0;
     flex-grow: 1;
     max-width: 100%;
-
+    
     ${propToStyle('flex')};
     ${propToStyle('display')};
     ${propToStyle('flexDirection')};
