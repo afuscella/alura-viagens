@@ -8,6 +8,7 @@ declare module 'styled-components' {
     colors: ColorsType,
     typographyVariants: TypographyVariantsType,
     breakpoints: BreakpointsType,
+    borderRadius: string;
     transition: string;
   }
 }

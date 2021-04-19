@@ -23,8 +23,8 @@ export default function WebsitePageWrapper({ seoProps, children }: IWebsitePageW
       flex={1}
       display="flex"
       flexDirection="column"
-      marginLeft={{ xs: '10px', md: 0 }}
-      marginRight={{ xs: '10px', md: 0 }}
+      marginLeft={{ xs: '28px', md: 0 }}
+      marginRight={{ xs: '28px', md: 0 }}
       backgroundColor="background.main"
     >
       <SEO
@@ -38,13 +38,13 @@ export default function WebsitePageWrapper({ seoProps, children }: IWebsitePageW
       >
         <Grid.Row
           flex={1}
-          paddingTop={{ xs: '18px', md: 0 }}
+          marginTop={{ xs: '18px', md: 0 }}
         >
           <Grid.Column
             flex={1}
             display="flex"
-            offset={{ xs: 0, md: 1 }}
-            value={{ xs: 12, md: 11 }}
+            offset={{ xs: 0, md: 2 }}
+            value={{ xs: 12, md: 10 }}
           >
             <Text
               variant="title"
@@ -52,26 +52,6 @@ export default function WebsitePageWrapper({ seoProps, children }: IWebsitePageW
               color="primary.main"
             >
               Alura Viagens
-            </Text>
-          </Grid.Column>
-        </Grid.Row>
-
-        <Grid.Row
-          flex={1}
-          paddingTop={{ xs: '10px', md: 0 }}
-        >
-          <Grid.Column
-            flex={1}
-            display="flex"
-            offset={{ xs: 0, md: 1 }}
-            value={{ xs: 12, md: 11 }}
-          >
-            <Text
-              variant="subTitle"
-              tag="span"
-              color="secondary.main"
-            >
-              Quando será a viagem?
             </Text>
           </Grid.Column>
         </Grid.Row>

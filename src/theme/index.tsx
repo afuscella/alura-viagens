@@ -21,11 +21,17 @@ const colors: ColorsType = {
   primary: {
     main: {
       color: '#35B6FF',
+      contrastText: '#fff',
     },
   },
   secondary: {
     main: {
       color: '#000000',
+    },
+  },
+  tertiary: {
+    main: {
+      color: '#32363a',
     },
   },
 };
@@ -42,5 +48,6 @@ export const theme: DefaultTheme = {
   colors,
   typographyVariants,
   breakpoints,
+  borderRadius: '10px',
   transition: '200ms ease-in-out',
 };

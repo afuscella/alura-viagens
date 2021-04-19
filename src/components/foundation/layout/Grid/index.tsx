@@ -15,14 +15,15 @@ interface IContainer {
 }
 
 interface IRow {
-  flex: number;
+  flex?: number;
   alignItems?: string;
   justifyContent?: string;
-  marginTop?: string;
+  marginTop?: BreakpointsTypes | string;
+  marginBottom?: BreakpointsTypes | string;
 }
 
 interface IColumn {
-  flex: number;
+  flex?: number;
   display?: string;
   flexDirection?: string;
   alignItems?: string;
@@ -34,8 +35,8 @@ interface IColumn {
 export const Grid = {
   Container: styled.div<IContainer>`
     width: 100%;
-    padding-left: 28px;
-    padding-right: 28px;
+    padding-left: 16px;
+    padding-right: 16px;
     margin-left: auto;
     margin-right: auto;
 
@@ -60,10 +61,10 @@ export const Grid = {
       padding-right: 16px;
     `,
     lg: css`
-      max-width: 1000px;
+      max-width: 1160px;
     `,
     xl: css`
-      max-width: 1000px;
+      max-width: 1222px;
     `,
   })}
   `,
@@ -75,7 +76,9 @@ export const Grid = {
     ${propToStyle('flex')};
     ${propToStyle('alignItems')};
     ${propToStyle('justifyContent')};
-    ${propToStyle('marginTop')}
+
+    ${propToStyle('marginTop')};
+    ${propToStyle('marginBottom')};
   `,
 
   Column: styled.div<IColumn>`
@@ -127,37 +130,40 @@ export const Grid = {
 ${({ value }) => {
     if (typeof value === 'number') {
       return css`
-          flex: 0 0 ${(100 * value) / 12}%;
-          max-width: ${(100 * value) / 12}%;
-        `;
+        flex: 0 0 ${(100 * value) / 12}%;
+        max-width: ${(100 * value) / 12}%;
+      `;
     }
 
     return breakpointsMedia({
       ...(value?.xs && {
         xs: css`
-            flex: 0 0 ${(100 * value.xs) / 12}%;
-            max-width: ${(100 * value.xs) / 12}%;
+          flex: 0 0 ${(100 * value.xs) / 12}%;
+          max-width: ${(100 * value.xs) / 12}%;
         `,
       }),
 
       ...(value?.sm && {
         sm: css`
-            flex: 0 0 ${(100 * value.sm) / 12}%;
-            max-width: ${(100 * value.sm) / 12}%;
+          flex: 0 0 ${(100 * value.sm) / 12}%;
+          max-width: ${(100 * value.sm) / 12}%;
         `,
       }),
 
       ...(value?.md && {
         md: css`
-            flex: 0 0 ${(100 * value.md) / 12}%;
-            max-width: ${(100 * value.md) / 12}%;
+          flex: 0 0 ${(100 * value.md) / 12}%;
+          max-width: ${(100 * value.md) / 12}%;
+          & {
+            padding-right: 20px;
+          }
         `,
       }),
 
       ...(value?.lg && {
         lg: css`
-            flex: 0 0 ${(100 * value.lg) / 12}%;
-            max-width: ${(100 * value.lg) / 12}%;
+          flex: 0 0 ${(100 * value.lg) / 12}%;
+          max-width: ${(100 * value.lg) / 12}%;
         `,
       }),
 

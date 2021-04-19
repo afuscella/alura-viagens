@@ -7,6 +7,8 @@ module.exports = {
   collectCoverage: true,
   moduleNameMapper: {
     '@/theme/(.*)': '<rootDir>/src/theme/$1',
+    '@/infra/(.*)': '<rootDir>/src/infra/$1',
+    '@/components/(.*)': '<rootDir>/src/components/$1',
   },
   coveragePathIgnorePatterns: [
     '<rootDir>/node_modules',

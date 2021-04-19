@@ -7,10 +7,10 @@ interface IBox {
   flex: number;
   display?: string;
   flexDirection?: string;
-  alignItems: string;
+  alignItems?: string;
   justifyContent?: string;
-  marginLeft: BreakpointsTypes;
-  marginRight: BreakpointsTypes;
+  marginLeft?: BreakpointsTypes;
+  marginRight?: BreakpointsTypes;
   backgroundColor?: string;
 
   boxShadow?: string;

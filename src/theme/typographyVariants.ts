@@ -28,4 +28,10 @@ export const typographyVariants = {
     fontWeight: '400',
     lineHeight: 1, // 100%
   },
+  smallestException: {
+    fontFamily: fontFamily.text,
+    fontSize: '14px',
+    fontWeight: '400',
+    lineHeight: 1, // 100%
+  },
 };

@@ -26,8 +26,8 @@ export function Text({
 }
 
 Text.propTypes = {
-  tag: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'p', 'li', 'a', 'span']),
-  variant: PropTypes.oneOf(['title', 'subTitle', 'paragraph']),
+  tag: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'p', 'li', 'a', 'span', 'label', 'input']),
+  variant: PropTypes.oneOf(['title', 'subTitle', 'paragraph', 'smallestException']),
 };
 
 Text.defaultProps = {
